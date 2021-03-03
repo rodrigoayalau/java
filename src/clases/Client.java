@@ -7,7 +7,7 @@ public class Client extends Person{
 	
 	public Client(String name, boolean active) {
 		super(name);
-		this.idClient = counterPerson++;
+		this.idClient = counterPerson;
 		this.active = active;
 	}
 
@@ -23,9 +23,11 @@ public class Client extends Person{
 		this.active = active;
 	}
 	
+	
+	
 	@Override
 	public String details() {
-		return super.details() + "," + this.idClient;
+		return super.details() + ", " + this.idClient + ", " + this.active;
 	}
 
 	@Override

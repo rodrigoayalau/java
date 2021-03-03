@@ -32,8 +32,7 @@ public class Person {
 	
 	public Person(String name) {
 		this.name = name;
-		Person.counterPerson++;
-		this.IdPerson = Person.counterPerson;
+		this.IdPerson = Person.counterPerson++;
 	}
 
 	// Methods
@@ -84,7 +83,7 @@ public class Person {
 	}
 	
 	public String details() {
-		return "From class Person: " + name;
+		return "From class Person: " + this.name;
 	}
 
 	@Override
