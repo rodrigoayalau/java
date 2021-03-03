@@ -82,6 +82,10 @@ public class Person {
 	public static void setCountPerson(int countPerson) {
 		Person.counterPerson = countPerson;
 	}
+	
+	public String details() {
+		return "From class Person: " + name;
+	}
 
 	@Override
 	public String toString() {

@@ -22,6 +22,11 @@ public class Client extends Person{
 	public void setActive(boolean active) {
 		this.active = active;
 	}
+	
+	@Override
+	public String details() {
+		return super.details() + "," + this.idClient;
+	}
 
 	@Override
 	public String toString() {

@@ -12,6 +12,8 @@ public class EntryPoint {
 		p1.setLastname("Ayala");
 		p1.setAge(30);
 		System.out.println(p1);
+	
+		printDetails(p1);
 		
 		Person p2 = new Person();
 		p2.setName("Maria Jose");
@@ -24,7 +26,14 @@ public class EntryPoint {
 		
 		Client c1 = new Client("Maria", true);
 		System.out.println(c1);
+		printDetails(c1);
 		
 	}
+	
+	public static void printDetails(Person person) {
+		System.out.println(person.details());
+	}
+	
+	
 
 }
