@@ -3,6 +3,7 @@ package main;
 import clases.Client;
 import clases.GeometricFigure;
 import clases.IAccess;
+import clases.Oracle;
 import clases.Person;
 import clases.Rectangle;
 import clases.SQL;
@@ -52,10 +53,18 @@ public class EntryPoint {
 		
 		IAccess data = new SQL();
 		data.insert();
+		
+		IAccess data1 = new Oracle();
+		printAccess(data1);
 	}
 	
 	public static void printDetails(Person person) {
 		System.out.println(person.details());
+	}
+	
+	// Polymorphism with Interfaces
+	public static void printAccess(IAccess data) {
+		data.delete();
 	}
 	
 	
