@@ -5,6 +5,8 @@ public class Client extends Person{
 	private int idClient;
 	private boolean active;
 	
+	public String clientsArray[];
+	
 	public Client(String name, boolean active) {
 		super(name);
 		this.idClient = counterPerson;

@@ -1,5 +1,8 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import clases.Client;
 import clases.GeometricFigure;
 import clases.IAccess;
@@ -12,6 +15,9 @@ public class EntryPoint {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		List<String> clientList = new ArrayList<String>();
+		
 		Person p1 = new Person();
 		p1.setName("Rodrigo");
 		p1.setLastname("Ayala");
@@ -34,11 +40,15 @@ public class EntryPoint {
 		// Overriding
 		Client c1 = new Client("Maria", true);
 		System.out.println(c1.details());
-		
+	
+		clientList.add(c1.getName());
 		
 		// Polymorphism
 		Client c2 = new Client("Gabriela", false);
 		printDetails(c2);
+		clientList.add(c2.getName());
+		
+		System.out.print(clientList);
 		
 		//Abstract
 		GeometricFigure rectangle = new Rectangle("rectangle",4,2);
@@ -56,6 +66,16 @@ public class EntryPoint {
 		
 		IAccess data1 = new Oracle();
 		printAccess(data1);
+		
+		int ages [] = new int[3];
+		ages[0] = 1;
+		ages[1] = 2;
+		ages[2] = 3;
+		System.out.println(ages.length);
+		
+		for(int i=0; i < ages.length; i++) {
+			System.out.println(i);
+		}
 	}
 	
 	public static void printDetails(Person person) {
