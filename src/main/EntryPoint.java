@@ -35,6 +35,8 @@ public class EntryPoint {
 		
 		// Prints toString() method
 		Person p3 = new Person("Alberto", "Ayala", 'm', 40, 3000.00);
+		p3.showInformation();
+		p3.showInformation("Alberto", "Ayala", 40);
 		System.out.println(p3);
 		
 		// Overriding
@@ -48,14 +50,15 @@ public class EntryPoint {
 		printDetails(c2);
 		clientList.add(c2.getName());
 		
-		System.out.print(clientList);
+		System.out.println(clientList);
 		
 		//Abstract
 		GeometricFigure rectangle = new Rectangle("rectangle",4,2);
 		rectangle.printFigure();
 		System.out.println(rectangle.area());
+		System.out.println(rectangle);
 		
-		String word = "EPAM";
+		String word = "Hello World";
 		StringBuilder input = new StringBuilder();
 		input.append(word);
 		input.reverse();

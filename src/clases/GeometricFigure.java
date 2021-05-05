@@ -2,7 +2,11 @@ package clases;
 
 public abstract class GeometricFigure {
 	
-	protected String type;
+	protected String type = null;
+	
+	protected GeometricFigure() {
+		this.type = "geometric: ";
+	}
 	
 	protected GeometricFigure(String type) {
 		this.type = type;

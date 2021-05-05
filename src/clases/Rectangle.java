@@ -4,6 +4,10 @@ public class Rectangle extends GeometricFigure{
 	
 	int base;
 	int height;
+	
+	public Rectangle() {
+		this.type = "rectangle";
+	}
 
 	public Rectangle(String type, int base, int height) {
 		super(type);
@@ -20,6 +24,12 @@ public class Rectangle extends GeometricFigure{
 	public int area() {
 		return base * height;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + " Rectangle [base=" + base + ", height=" + height + "]";
+	}
+	
 	
 	
 	

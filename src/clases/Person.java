@@ -42,6 +42,10 @@ public class Person {
 		System.out.println("Age: " + age);
 	}
 
+	public void showInformation(String name, String lastname, int age) {
+		System.out.println("Name: " + name + " " + lastname + ", " + age);
+	}
+
 	public int getIdPerson() {
 		return IdPerson;
 	}

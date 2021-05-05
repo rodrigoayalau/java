@@ -25,8 +25,6 @@ public class Client extends Person{
 		this.active = active;
 	}
 	
-	
-	
 	@Override
 	public String details() {
 		return super.details() + ", " + this.idClient + ", " + this.active;
