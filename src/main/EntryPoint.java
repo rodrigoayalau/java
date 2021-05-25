@@ -82,7 +82,7 @@ public class EntryPoint {
 	}
 	
 	public static void printDetails(Person person) {
-		System.out.println(person.details());
+		System.out.println(person.details() + " OKKKKKKKK");
 	}
 	
 	// Polymorphism with Interfaces

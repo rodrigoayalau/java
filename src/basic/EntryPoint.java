@@ -17,6 +17,11 @@ public class EntryPoint {
 			e.printStackTrace();
 		}
 		
+		String[] vowels = {"a","e","i","o","u"};
+		String word = "hola";
+		
+		word = word.replaceAll("[AaEeIiOoUu]", "");
+		System.out.println(word);
 		
 	}
 
